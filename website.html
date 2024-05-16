@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="/Users/yo/Desktop/NewsFuse/css/style.css" />
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NewsFuse : Your quick updator</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+   
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+
+         <a href="#home" class="logo">News<span>Fuse</span></a>
+
+         <nav class="nav">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">What we offer</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+         </nav>
+
+         <button class="btn btn-warning btn-lg btn-block m-4 p-2" onclick="toggleDarkMode()" id="changeModeBtn">
+            Change Mode
+          </button>
+
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row min-vh-100 align-items-center">
+         <div class="content text-center text-md-left">
+            <h3>STAY AHEAD, One Scrape at a Time!</h3>
+            <p>Please click this button to select the different options available to you </p>
+            
+            <div style="padding: 20px;">
+               <label for="category-select">Load News</label>
+               <select id="category-select">
+                   <option value="all">All</option>
+                   <option value="business">Business</option>
+                   <option value="entertainment">Entertainment</option>
+                   <option value="general">General</option>
+                   <option value="health">Health</option>
+                   <option value="science">Science</option>
+                   <option value="sports">Sports</option>
+                   <option value="technology">Technology</option>
+               </select>
+           </div>
+
+
+         </div>
+      </div>
+
+   </div>
+
+
+  <div id="articles-container" style="padding: 20px;"></div>
+
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="container">
+
+      <div class="row align-items-center">
+
+         <div class="col-md-6 image">
+            <img src="images/news.png" class="w-100 mb-5 mb-md-0" alt="">
+         </div>
+
+         <div class="col-md-6 content">
+            <span>about us</span>
+            <h3>From Data Streams to News Dreams!</h3>
+            <p>Web scraping is a powerful technique used to extract data from websites.
+               News aggregation involves the collection and categorization of news articles from TheGuardian newspaper to provide users with a centralized platform for accessing current events. For this purpose, we are gonna develop an efficient and reliable news aggregator that meets user needs while respecting legal and ethical considerations.</p>
+         
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+   <h1 class="heading">our services</h1>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>News Articles</h3>
+         <p>NewsFuse extracts articles based on user preferences and criteria.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>Categorized Articles</h3>
+         <p>Articles are categorized into predefined topics such as politics, sports, technology, and
+            entertainment.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Article Metadata</h3>
+         <p>Metadata including headlines, summaries, publication dates, and sources are extracted and presented to users.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Notification</h3>
+         <p>Users receive notifications when new articles matching their preferences are available.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>Geolocation</h3>
+         <p>NewsFuse can extract articles or information based on their geolocation, such as news
+            from a specific city or country</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>Trending Topics</h3>
+         <p>NewsFuse can provide insights into trending topics or keywords based on extracted article data.</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+   <h1 class="heading"> satisfied users </h1>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <img src="images/pic-1.png" alt="">
+         <p> "Your website has completely transformed how I consume news. Instead of jumping in the website, I can now find everything I need organized. The curated content saves me a ton of time, and I love the option to customize my news feed based on my interests.</p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <h3>Roua</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/pic-2.png" alt="">
+         <p> "It's refreshing to have a platform that prioritizes quality journalism without bombarding me with clickbait headlines. I've recommended it to all my friends!"</p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+         </div>
+         <h3>Mimi</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/pic-3.png" alt="">
+         <p> "I've tried several news aggregation platforms in the past, but yours stands out for its simplicity and reliability. The layout is clean, the loading times are fast, and I haven't encountered any technical issues so far" </p>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="alt"></i>
+         </div>
+         <h3> Ayoub</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- reviews section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" id="contact">
+
+   <div class="box-container container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+21679-999-999</p>
+         <p>+111-222-3333</p>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>our address</h3>
+         <p>TUNISIA</p>
+      </div>
+
+   
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email addresses</h3>
+         <p>yosrjaouadi@gmail.com</p>
+         <p>zaineb6belaid@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit"> &copy; copyright @<img src="images/logo.png" class="mb-5 mb-md-0" alt="University Logo" width="auto" height="30">
+        by <span>Yosr, Zeineb</span>  </div>
+
+
+   
+
+</section>
+
+<footer id="about" class="fullwidth"> <p style="color: gray">"News are the first draft of History"</p> </footer>
+
+
+<script src="/Users/yo/Desktop/NewsFuse/script.js"></script>
+
+</body>
+</html>
